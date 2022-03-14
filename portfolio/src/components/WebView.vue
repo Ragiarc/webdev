@@ -63,8 +63,8 @@ main {
 
 .panelImg {
     margin:20px;
-    width: 40vw;
-    height: 100%;
+    max-width: 40vw;
+    height: auto;
 }
 
 #tags {
@@ -84,7 +84,19 @@ a:hover {
   color: #0ff;
 }
 
+@media only screen and (max-width: 450px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .panelImg {
+    margin:20px;
+    max-width: 80vw;
+    height: auto;
+}
+  
+}
 
 
 

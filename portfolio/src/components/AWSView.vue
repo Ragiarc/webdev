@@ -64,13 +64,13 @@ main {
 
 .panelImg {
     margin:20px;
-    width: 40vw;
-    height: 100%;
+    max-width: 40vw;
+    height: auto;
 }
 
 #phone {
-    width: 20vw;
-    height: 100%;
+    max-width: 20vw;
+    height: auto;
 }
 
 #tags {
@@ -90,6 +90,23 @@ a {
 
 a:hover {
   color: #0ff;
+}
+
+@media only screen and (max-width: 450px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panelImg {
+    margin:20px;
+    max-width: 80vw;
+    height: auto;
+}
+#phone {
+    max-width: 40vw;
+    height: auto;
+}
 }
 
 

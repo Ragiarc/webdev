@@ -89,6 +89,19 @@ a:hover {
   color: #0ff;
 }
 
+@media only screen and (max-width: 450px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panelImg {
+    margin:20px;
+    max-width: 80vw;
+    height: auto;
+}
+}
+
 
 
 

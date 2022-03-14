@@ -6,7 +6,8 @@
      
   </div>
   
-  <div class="hero">
+  <div class="glowey">
+    <div class="hero">
     <router-link to="/mr">Mixed Reality Development</router-link>
     <div>
       <router-link to="/ue4" class = "inline">Unreal Engine</router-link>
@@ -20,6 +21,7 @@
       <router-link to="/sql" class = "inline">SQL</router-link>
     </div>
     <router-link to="/web">Web Design</router-link>
+  </div>
   </div>
 </div>
 </template>
@@ -43,8 +45,8 @@ export default {
   
 }
 
-.hero {
-  margin-top: 5vh;
+.glowey {
+  margin-top: 15vh;
   margin-bottom: 5vh;
   box-shadow:
     inset 0 0 50px #fff,      /* inner white */
@@ -58,6 +60,10 @@ export default {
   max-width: fit-content;
   height:fit-content;
   border-radius: 50%;
+}
+
+.hero {
+  margin: 60px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -99,6 +105,18 @@ a:hover {
 
 a.router-link-active {
   color: #42b983;
+}
+
+@media only screen and (max-width: 450px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: aliceblue;
+  
+}
 }
 
 </style>

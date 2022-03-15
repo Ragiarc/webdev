@@ -2,7 +2,7 @@
 <div class="wrapper">
     <main>
     <div class = "left">
-    <h1>Neural Chickens</h1>
+    <h2>Neural Chickens</h2>
     <p>&emsp;&emsp;My first foray into artificial intelligence, this prototype simulates behavioral evolution in simple organisms. 
         3d-rendered chickens are provided a simple neural network that determines their actions. 
         Newly hatched chickens inherit the neural network of their mother and have a random chance to apply one of several mutations to their neural network. 
@@ -14,8 +14,7 @@
 
     </div>
     <div class = "right">
-        <img src = "/assets/Cogger1.PNG" class = "panelImg">
-        <img src = "/assets/Cogger2.PNG" class = "panelImg">
+        <img src = "../assets/chicken.png" class = "panelImg">
     </div>
     </main>
     <p id="tags">Tags: Artificial Intelligence, Unreal Engine</p>
@@ -61,19 +60,23 @@ main {
 .right {
     display: flex;
     flex-direction: column;
+    align-self: center;
     flex:1
 }
 
 .panelImg {
     margin:20px;
-    min-width: 30vw;
+    max-width: 40vw;
+    height: auto;
 }
 
 #tags {
     /* color: grey; */
     opacity: 75%;
     font-weight: 500;
-    flex:.1
+    flex:.1;
+    align-self: flex-start;
+    margin-left: 35px;
 }
 
 a {

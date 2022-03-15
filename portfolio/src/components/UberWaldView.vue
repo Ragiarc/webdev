@@ -2,22 +2,19 @@
 <div class="wrapper">
     <main>
     <div class = "left">
-    <h1>UberWald</h1>
-    <p>&emsp;&emsp;I had a lot of fun building Cogger. As lab assistant for the Mixed Reality Lab at BYU, I was asked to create a VR application that would give users motion sickness.
-    Video of actors getting nauseated playing Cogger is currently being used as part of a playable case study in BYU classes. The application has a single, short level where players are expected to platform their way across a system of rotating gears to fix the large steam-punk machine they find themselves
-    inside of. Cogger uses standard VR locomotion controls and was developed in the Unity game engine.<br>
-    &emsp;&emsp;In building cogger I developed my own gear generation system - an in-editor tool for specyfying the  number and types of gears to be connected to each other. When given an initial rotation speed and direction, the gears will
-    all rotate in sync together as expected. <br>
-    &emsp;&emsp;The creators of the playable case study were very happy with Cogger, and the actors didn't have to do very much acting to get motion sick.
+    <h2>UberWald</h2>
+    <p>&emsp;&emsp;UberWald is my current side project. Currently, it's a 5 minute playable demo of a resource management focused mmo. Developing UberWald involves many of the skills I've gained as a developer.
+      <br>&emsp;&emsp;UberWald has a persistent multiplayer world where players schedule tasks that change the world in real time. While not yet implemented, tracking changes to the world will require elegant database management. Maintaining the database in real time  
+    The players' most valuable resource are NPCs who can be assigned tasks. How and whether the NPC completes the task is determined using a Goal Oriented Action Planning approach, fulfilling my itch to involve AI into the project. 
+    In every aspect of UberWald I strive to keep the code as clean and maintainable as possible, allowing me to practice different design patterns in tandem.
     </p>
 
     </div>
     <div class = "right">
-        <img src = "/assets/Cogger1.PNG" class = "panelImg">
-        <img src = "/assets/Cogger2.PNG" class = "panelImg">
+        <img src = "../assets/uberwald.png" class = "panelImg">
     </div>
     </main>
-    <p id="tags">Tags: Mixed Reality Development, Unity</p>
+    <p id="tags">Tags: Unreal Engine</p>
 </div>
 
 </template>
@@ -45,7 +42,7 @@ export default {
 main {
     margin: 10px;
     display: flex;
-    flex:.9
+    flex:.9;
 }
 
 .left {
@@ -60,19 +57,23 @@ main {
 .right {
     display: flex;
     flex-direction: column;
-    flex:1
+    flex:1;
+    align-self: center;
 }
 
 .panelImg {
     margin:20px;
-    min-width: 30vw;
+    max-width: 40vw;
+    height: auto;
 }
 
 #tags {
     /* color: grey; */
     opacity: 75%;
     font-weight: 500;
-    flex:.1
+    flex:.1;
+    align-self: flex-start;
+    margin-left: 35px;
 }
 
 a {
@@ -96,6 +97,7 @@ a:hover {
     max-width: 80vw;
     height: auto;
 }
+
 }
 
 

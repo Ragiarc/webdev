@@ -2,8 +2,8 @@
 <div class="wrapper">
     <main>
     <div class = "left">
-    <h1>Testing &amp; Verifcation</h1>
-    <p>&emsp;&emsp;I love test driven developement. <br>
+    <h1>Testing &amp; Verification</h1>
+    <p>&emsp;&emsp;I love test driven development. <br>
     &emsp;&emsp;To prove it, I implemented a type-checking algorithm that will type check Java code. 
     To verify my implementation I used JUnit to dynamically write tests at runtime that supplied full branch coverage and mutation coverage. 
     I then created tests to test that my dynamically created tests were created and operated correctly. <br>
@@ -15,7 +15,6 @@
     </div>
     <div class = "right">
         <img src="../assets/testing.jpg" class = "panelImg"/>
-        <img src="../assets/testing2.jpg" class = "panelImg"/>
     </div>
     </main>
     <p id="tags">Tags: Testing &amp; Verification</p>
@@ -24,7 +23,6 @@
 </template>
 
 <script>
-// import cogger1 from "../assets/Cogger1.PNG"
 
 export default {
   name: 'TestingView',
@@ -73,10 +71,11 @@ main {
 }
 
 #tags {
-    /* color: grey; */
     opacity: 75%;
     font-weight: 500;
-    flex:.1
+    flex:.1;
+    align-self: flex-start;
+    margin-left: 35px;
 }
 
 a {

@@ -3,8 +3,7 @@
     <header>
       <h1>Craig Harris</h1>
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <p> craigharris@byu.net | (512)781-2452</p>
     </nav>
     </header>
     <main>
@@ -28,6 +27,7 @@ header {
 header h1 {
   padding-left: 5vw;
   color:aliceblue;
+  align-self: center;
 }
 
 #app {
@@ -46,6 +46,8 @@ main {
 
 nav {
   padding: 30px;
+  font-weight: bold;
+  color: #698996;
 }
 
 nav a {

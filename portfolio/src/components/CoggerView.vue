@@ -2,11 +2,11 @@
 <div class="wrapper">
     <main>
     <div class = "left">
-    <h1>Cogger</h1>
+    <h2>Cogger</h2>
     <p>&emsp;&emsp;I had a lot of fun building Cogger. As lab assistant for the Mixed Reality Lab at BYU, I was asked to create a professional looking VR application that would make users motion sick.
     Video of actors getting nauseated playing Cogger is currently being used as part of a playable case study in BYU classes. The application has a single, short level where players are expected to platform their way across a system of rotating gears to fix the large steam-punk machine they find themselves
     inside of. Cogger uses standard VR locomotion controls and was developed in the Unity game engine.<br>
-    &emsp;&emsp;In building cogger I developed my own gear generation system - an in-editor tool for specyfying the number and types of gears to be connected to each other. When given an initial rotation speed and direction, the gears will
+    &emsp;&emsp;In building cogger I developed my own gear generation system - an in-editor tool for specifying the number and types of gears to be connected to each other. When given an initial rotation speed and direction, the gears will
     all rotate in sync together as expected. <br>
     &emsp;&emsp;The creators of the playable case study are very happy with Cogger, and the actors didn't have to try hard to look motion sick.
     </p>
@@ -51,7 +51,7 @@ main {
 
 .left {
     align-self: flex-start;
-    font-size: 18px;
+    font-size: 1.25em;
     line-height: 1.75;
     text-align: left;
     flex:1
@@ -61,7 +61,8 @@ main {
 .right {
     display: flex;
     flex-direction: column;
-    flex:1
+    flex:1;
+    align-self: center;
 }
 
 .panelImg {

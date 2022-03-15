@@ -3,7 +3,7 @@
     <main>
     <div class = "left">
     <h1>AWS</h1>
-    <p>&emsp;&emsp;AWS does a lot of things, but I've had experience using DynamoDB, Lambdas, and SQS, and S3 buckets.<br>
+    <p>&emsp;&emsp;AWS does a lot of things, but I've had experience using DynamoDB, Lambdas, SQS, and S3 buckets.<br>
     &emsp;&emsp;Using these tools I created an Android twitter clone capable of updating the feeds of 10000 users in under 2 minutes. The app also demonstrates proper
     storage of sensitive user information utilizing salting and hashing algorithms.<br>
     </p>
@@ -69,6 +69,7 @@ main {
 }
 
 #phone {
+    margin-left: 10vw;
     max-width: 20vw;
     height: auto;
 }

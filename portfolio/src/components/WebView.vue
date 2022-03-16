@@ -4,7 +4,8 @@
     <div class = "left">
     <h1>Web Development</h1>
     <p>Like what you see?<br>
-    &emsp;&emsp;This website runs on a server I'm renting using Nginx and the Vue CLI toolchain. Keeping an updated portfolio website can be a chore, so I decided to use Vue components to make adding additional projects or even new categories easy and efficient.<br>
+    &emsp;&emsp;This website runs on a server I'm renting using Nginx and the Vue CLI toolchain. Keeping an updated portfolio website can be a chore, so I decided to use Vue components to make adding additional projects or even new categories easy and efficient.
+    Take a look at my <a href = "https://github.com/Ragiarc/webdev.git">git repo</a>.<br>
     &emsp;&emsp;I was also the lead developer for <a href ="https://www.mathisfigureoutable.com" target="_blank">mathisfigureoutable.com</a> and most everything you'll see there was designed by me (as of 3/10/2022).
     </p>
 
@@ -13,7 +14,7 @@
         <img src="../assets/mathHome.jpg" class = "panelImg"/>
     </div>
     </main>
-    <p id="tags">Tags: Mixed Reality Development, Unity</p>
+    <p id="tags">Tags: Web development, front end</p>
 </div>
 
 </template>
@@ -71,12 +72,13 @@ main {
     /* color: grey; */
     opacity: 75%;
     font-weight: 500;
-    flex:.1
+    flex:.1;
+    align-self: flex-start;
+    margin-left: 35px;
 }
 
 a {
-  font-weight: 800;
-  color: #698996;
+  color: #0ff;
   text-decoration: none;
 }
 

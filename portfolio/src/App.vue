@@ -3,7 +3,7 @@
     <header>
       <h1>Craig Harris</h1>
     <nav>
-      <p> craigharris@byu.net | (512)781-2452</p>
+      <p> craigharris@byu.net | (512)781-2452 | <a href="../assets/1.2022 Resume.pdf" download>Resume</a></p>
     </nav>
     </header>
     <main>
@@ -22,6 +22,7 @@ body {
 header {
   display: flex;
   background-color: #1B2E37;
+  border-bottom: #42b983 5px solid;
 }
 
 header h1 {
@@ -53,6 +54,11 @@ nav {
 nav a {
   font-weight: bold;
   color: #698996;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #42b983;
 }
 
 nav a.router-link-exact-active {

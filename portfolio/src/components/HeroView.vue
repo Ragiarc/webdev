@@ -7,8 +7,8 @@
         and Artificial Intelligence are my passion, and making it all work with
         clean, maintainable software is a delight.
       <br>
-        To learn more about what skills I bring to the table, select a category
-        from the right.
+        <strong>Select a category from the right</strong> 
+        to learn more about what skills I bring to the table. 
       </p>
       <div id="quick">
         <ul>
@@ -48,13 +48,17 @@ export default {
 <style scoped>
 
 h1 {
-  color:#0ff;
-  margin-bottom: 1vh;
+  /* color:#0ff; */
+  margin-bottom: .1vh;
 }
 p {
   font-weight: 400;
   font-size: 1.25em;
   line-height: 2;
+}
+
+strong {
+  color: #42b983;
 }
 
 #quick {

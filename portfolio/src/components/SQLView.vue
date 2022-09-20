@@ -6,9 +6,6 @@
     <p>&emsp;&emsp;For my CS240 class I developed a Family Map android application that presents data from an SQL database in a fun way. 
         Users input data (events) about their relatives into the database, and then the application maps those events at the location they happened on a world map. 
         Colored ines connecting events visualize how the events are related to each other, whether spousal, chronological, parent-child, etc.  <br>
-    &emsp;&emsp;In building cogger I developed my own gear generation system - an in-editor tool for specifying the number and types of gears to be connected to each other. When given an initial rotation speed and direction, the gears will
-    all rotate in sync together as expected. <br>
-    &emsp;&emsp;The creators of the playable case study are very happy with Cogger, and the actors didn't have to try hard to look motion sick.
     </p>
 
     </div>
@@ -16,7 +13,7 @@
         <img src="../assets/sql.jpg" class = "panelImg"/>
     </div>
     </main>
-    <p id="tags">Tags: Mixed Reality Development, Unity</p>
+    <p id="tags">Tags: SQL, Backend</p>
 </div>
 
 </template>
@@ -39,7 +36,7 @@ export default {
   align-content: center;
   align-items: center;
   color: aliceblue;
-  background-color: #CD8B76;
+  background-color: #5f0649;
 }
 
 main {
@@ -83,7 +80,7 @@ main {
 
 a {
   font-weight: 800;
-  color: #C9C5BA;
+  color: #c9bac6;
   text-decoration: none;
 }
 

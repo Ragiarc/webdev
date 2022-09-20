@@ -40,6 +40,7 @@ export default {
   align-content: center;
   align-items: center;
   color: aliceblue;
+  background-color: #69936c
 }
 
 main {

@@ -1,14 +1,16 @@
 <template>
-  <div class="wrapper">
+  <wrapper>
+  <div class="panel">
     <div class="greeting">
-      <h1>Hey There!</h1>
+      <h1>Hey there!</h1>
       <p>
-        I'm a junior at BYU getting my Computer Science degree. Mixed Reality
+        I'm graduating from BYU in April 2023 with a Computer Science degree. 
+        <br>Mixed Reality
         and Artificial Intelligence are my passion, and making it all work with
         clean, maintainable software is a delight.
       <br>
-        To learn more about what skills I bring to the table, select a category
-        from the right.
+        To learn more about the skills I bring to the table, select a category
+        below.
       </p>
       <div id="quick">
         <ul>
@@ -19,23 +21,18 @@
       </div>
     </div>
 
-    <div class="glowey">
       <div class="hero">
-        <div>
-          <router-link to="/aws" class="inline">AWS</router-link>
-          <p class="inline">&nbsp;&amp;&nbsp;</p>
-          <router-link to="/sql" class="inline">SQL</router-link>
-        </div>
-        <router-link to="/mr">Mixed Reality</router-link>
-        <div>
-          <router-link to="/ue4" class="inline">Unreal Engine</router-link>
-        </div>
-        <router-link to="/test">Testing &amp; Verification</router-link>
-        
-        <router-link to="/web">Web Design</router-link>
+        <img src="../assets/Aug2022-croppedMore.jpg" class = "panelImg"/>
       </div>
     </div>
-  </div>
+    <div class="submenu" style="--items: 2">
+      <router-link class="menuItem" to="/backend">Backend</router-link>
+      <router-link class="menuItem" to="/mr">VR/AR</router-link>
+      <router-link class="menuItem" to="/test">Testing</router-link>
+      <router-link class="menuItem" to="/web">Front End</router-link>
+      <span class="line"></span>
+    </div>
+  </wrapper>
 </template>
 
 <script>
@@ -48,7 +45,7 @@ export default {
 <style scoped>
 
 h1 {
-  color:#0ff;
+  color:#97f19d;
   margin-bottom: 1vh;
 }
 p {
@@ -63,14 +60,73 @@ p {
   line-height: 1.5;
 }
 
-.wrapper {
+.panel {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   align-content: center;
   align-items: center;
   color: aliceblue;
 }
+
+.panelImg {
+  max-width: 22vw;
+  height: auto;
+}
+
+.submenu {
+  display: flex;
+  justify-content: center;
+  background-color: #123;
+	background-image: linear-gradient(to bottom, #0003, transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px #0003;
+	font-size: 1em;
+	font-weight: 100;
+}
+
+.menuItem {
+	color: #9ab;
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.menuItem:hover {
+	background: #ffffff06;
+	color: #adf;
+}
+.submenu > .line {
+	background: #68a;
+	height: 1px;
+	pointer-events: none;
+}
+
+.submenu > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.submenu > .menuItem:hover ~ .line {
+	opacity: 1;
+}
+
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
+
 
 .greeting {
   text-align: left;
@@ -78,13 +134,14 @@ p {
   flex-direction: column;
   align-items: flex-start;
   margin: 5vw;
-  flex: .35;
+  flex: .7;
 }
 
 .greeting h1 {
   text-align: left;
   justify-self: flex-start;
   align-self: flex-start;
+  font-size: 3em;
 }
 
 .glowey {

@@ -4,7 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import MRView from '../components/MRView.vue'
 import UnrealView from '../components/UnrealView.vue'
 import TestingView from '../components/TestingView.vue'
-import AWSView from '../components/AWSView.vue'
+import BackendView from '../components/BackEndView.vue'
 import SQLView from '../components/SQLView.vue'
 import WebView from '../components/WebView.vue'
 
@@ -19,7 +19,7 @@ const routes = [
       {path: '/mr', component: MRView},
       {path: '/ue4', component: UnrealView},
       {path: '/test', component: TestingView},
-      {path: '/aws', component: AWSView},
+      {path: '/backend', component: BackendView},
       {path: '/sql', component: SQLView},
       {path: '/web', component: WebView},
     ]

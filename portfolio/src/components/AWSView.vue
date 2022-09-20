@@ -14,7 +14,6 @@
         <img src="../assets/tweeter2.jpg" class = "panelImg" id="phone"/>
     </div>
     </main>
-    <p id="tags">Tags: Testing &amp; Verification</p>
 </div>
 
 </template>
@@ -23,7 +22,7 @@
 // import cogger1 from "../assets/Cogger1.PNG"
 
 export default {
-  name: 'TestingView',
+  name: 'AWSView',
 }
 </script>
 
@@ -37,7 +36,7 @@ export default {
   align-content: center;
   align-items: center;
   color: aliceblue;
-  background-color: #A4303F;
+  background-color: #69936c;
 }
 
 main {

@@ -39,7 +39,7 @@ export default {
   align-content: center;
   align-items: center;
   color: aliceblue;
-  background-color: #732C2C;
+  background-color: #69936c;
 }
 
 main {

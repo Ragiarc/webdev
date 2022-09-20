@@ -4,7 +4,7 @@
       <h1>Unreal Engine</h1>
       <p>
         Unreal Engine is my goto playground to try out new concepts. I love to develop because I love <em>runtime</em> and <em>simulation</em>. Having things adapt and change as they are used thrills me, and Unreal gives me the tools I need to do that in any virtual medium.
-        <br>I spend nearly all my free-time prototyping something or exploring a new concept in Unreal. Below are the projects that I've made the most progress in. 
+        <br>I spend nearly all my free-time prototyping something or exploring a new concept in Unreal. Below is a horribly incomplete list of projects I've worked on. 
       </p>
     </div>
     <div id="views">
@@ -35,12 +35,12 @@ export default {
 
 .description {
   color: aliceblue;
-  background-color: #805e73;
+  background-color: #69936c;
 }
 
 .description h1 {
   margin-top: 5vh;
-  background-color: #805e73;
+  background-color: #69936c;
 }
 
 .description p {

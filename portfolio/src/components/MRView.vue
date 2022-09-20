@@ -40,25 +40,24 @@ export default {
 
 .description {
   color: aliceblue;
-  background-color: #420c14;
+  background-color: #69936c;
 }
 
 .description h1 {
   margin-top: 5vh;
-  background-color: #420c14;
+  background-color: #69936c;
 }
 
 .description p {
   font-size: 18px;
   line-height: 1.75;
   text-align: left;
-  margin: 5vw;
+  margin: 2vw;
   margin-top: 1vh;
 }
 
 #wrapper {
   background-color: #420c14;
-  margin-top: 3vh;
   display: flex;
   flex-direction: column;
 }

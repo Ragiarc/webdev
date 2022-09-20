@@ -2,18 +2,18 @@
 <div class="wrapper">
     <main>
     <div class = "left">
-    <h1>Web Development</h1>
-    <p>Like what you see?<br>
-    &emsp;&emsp;This website runs on a server I'm renting using Nginx and the Vue CLI toolchain. Keeping an updated portfolio website can be a chore, so I decided to use Vue components to make adding additional projects or even new categories easy and efficient.<br>
-    &emsp;&emsp;I was also the lead developer for <a href ="https://www.mathisfigureoutable.com" target="_blank">mathisfigureoutable.com</a> and most everything you'll see there was designed by me (as of 3/10/2022).
+    <h1>Azure</h1>
+    <p>&emsp;&emsp;As an R&amp;D intern at <a href="https://ce21.com/">CE21</a> I reimplemented their in-house search solution. 
+    By integrating with Azure Cognitive Search, the new solution saves on thousands of SQL queries, provides faster response time to clients, 
+    better search results, and is easily extendable.<br>
     </p>
-
+    
+    
     </div>
     <div class = "right">
-        <img src="../assets/mathHome.jpg" class = "panelImg"/>
+        <img src="../assets/AzureSearchCropped.png" class = "panelImg"/>
     </div>
     </main>
-    <p id="tags">Front End</p>
 </div>
 
 </template>
@@ -22,7 +22,7 @@
 // import cogger1 from "../assets/Cogger1.PNG"
 
 export default {
-  name: 'WebView',
+  name: 'AzureView',
 }
 </script>
 
@@ -43,7 +43,7 @@ main {
     margin: 10px;
     margin-left: 35px;
     display: flex;
-    flex:.9
+    flex:.9;
 }
 
 .left {
@@ -57,21 +57,37 @@ main {
 
 .right {
     display: flex;
-    flex-direction: column;
-    flex:1
+    flex-direction: row;
+    flex:1;
+    margin:20px;
+}
+
+.right img {
+  max-width: 30vw;
+  height: auto;
 }
 
 .panelImg {
-    margin:20px;
+    margin-top:100px;
     max-width: 40vw;
     height: auto;
+}
+
+
+
+#azure {
+  margin: top 10vh;;
+  max-width: 20vw;
+  height: auto;
 }
 
 #tags {
     /* color: grey; */
     opacity: 75%;
     font-weight: 500;
-    flex:.1
+    flex:.1;
+    align-self: flex-start;
+    margin-left: 35px;
 }
 
 a {
@@ -94,8 +110,13 @@ a:hover {
     max-width: 80vw;
     height: auto;
 }
-  
+#phone {
+    max-width: 40vw;
+    height: auto;
 }
+}
+
+
 
 
 

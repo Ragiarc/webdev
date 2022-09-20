@@ -54,6 +54,10 @@ p {
   line-height: 2;
 }
 
+strong {
+  color: #42b983;
+}
+
 #quick {
   font-weight: 300;
   font-size: .75em;
